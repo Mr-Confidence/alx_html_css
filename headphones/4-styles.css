@@ -375,54 +375,72 @@
         font-weight: normal;
         margin-top: 5px;
       }
-      .contact-form {
-        max-width: 600px;
-        margin: 0 auto;
+      .contact {
+        padding: 4rem 0;
         text-align: center;
-    }
-    
-    .contact-form input,
-    .contact-form textarea {
+      }
+      
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .form-group {
+        position: relative;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      
+      .form-group input {
         width: 100%;
-        margin-bottom: 5rem;
-        padding: 1rem 0;
-        font-size: 1rem;
-        font-weight: bold;
         border: none;
-        border-bottom: 2px solid #ccc;
+        border-bottom: 1px solid var(--color-dark);
+        padding: 0.5rem 0;
         outline: none;
-        background: transparent;
-        transition: border-color 0.3s ease-in-out;
-    }
-    /* .contact-form textarea{
-        padding: o;
-        margin: 0;
-    } */
-    
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-        border-bottom: 2px solid #f05454;
-    }
-    
-    .contact-form textarea {
-        resize: none;
-        /* height: 120px; */
-    }
-    
-    .contact-form button {
-        /* text-align: center; */
-        margin: 50px;
-        width: 200px;
-        padding: 20px;
-        background-color: #f05454;
-        color: #fff;
-        border: none;
-        border-radius: 50px;
-        font-size: 1.1rem;
-        cursor: pointer;
-    }
-    
-    .contact-form button:hover {
-        background-color: #d94545;
-    }
+        font-size: 14px;
+      }
+      
+      .form-group label {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+      }
+      
+      .form-group input:focus + label,
+      .form-group input:valid + label {
+        top: -8px;
+        font-size: 12px;
+      }
+    /* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
 }
