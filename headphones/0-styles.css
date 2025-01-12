@@ -203,14 +203,6 @@ html, body {
     padding: 0 ;
     gap: 3rem;
   }
-  
-  .nav__logo {
-    position: absolute;
-    top: 34px;
-    left: 100px;
-    height: 32px;
-    z-index: 2;
-  }
 
   .nav__menu li {
     margin: 0;
