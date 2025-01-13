@@ -281,7 +281,26 @@
   .service h3 {
     margin: 1rem 0;
   }
-  
+  .pentagon-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.pentagon-container{
+  width: 190px;  
+  height: 190px;  
+  margin: 0 auto;  
+}
+
+.pentagon span {
+  font-size: 2.5rem;  
+  text-align: center;
+  line-height: 1.2;
+}
+
   }
   @media screen and (min-width: 768px) {
     .container {
